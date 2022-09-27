@@ -112,12 +112,20 @@ button[type="submit"] {
 }
 
 /* trending */
+.trending-section {
+  margin: 80px 22px 0 22px;
+}
+.h2-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 27px;
+}
 .trending {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 11px 0 11px;
-  gap: 10px;
-  margin-top: 80px;
+  gap: 20px;
 }
 .trending-img {
   width: 100%;
@@ -164,16 +172,19 @@ button[type="submit"] {
 .trending-cost {
   font-size: 22px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 /* deals */
+.deals-section {
+  margin: 80px 11px 0 11px;
+}
 .deals {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 11px 0 11px;
-  gap: 10px;
-  margin-top: 80px;
+  gap: 20px;
 }
 .deals-box {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
@@ -198,4 +209,42 @@ button[type="submit"] {
   font-size: 24px;
   line-height: 30px;
   margin-top: 13px;
+}
+
+/* trending-offer */
+.trending-offer-section {
+  margin: 80px 11px 0 11px;
+}
+.trending-offer-box {
+  display: flex;
+  align-items: center;
+}
+.trending-offer-details {
+  display: flex;
+  align-items: center;
+}
+
+.trending-offer-group {
+  width: 550px;
+  display: grid;
+  justify-items: center;
+}
+.trending-offer-group h3 {
+  margin-top: 65px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+.trending-offer-group button {
+  background-color: transparent;
+  cursor: grab;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 39px;
+  width: 172px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
 }
