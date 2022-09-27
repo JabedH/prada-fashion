@@ -134,8 +134,8 @@ button[type="submit"] {
   width: auto;
   height: auto;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 0px 10px;
 }
 .trending-text {
   display: grid;
@@ -187,8 +187,8 @@ button[type="submit"] {
   gap: 20px;
 }
 .deals-box {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 0px 10px;
 }
 .deals-text {
   display: grid;
@@ -218,10 +218,13 @@ button[type="submit"] {
 .trending-offer-box {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .trending-offer-details {
   display: flex;
   align-items: center;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0px 0px 10px;
 }
 
 .trending-offer-group {
@@ -236,7 +239,7 @@ button[type="submit"] {
   font-size: 48px;
   line-height: 60px;
 }
-.trending-offer-group button {
+.explore-button {
   background-color: transparent;
   cursor: grab;
   padding: 5px;
@@ -247,4 +250,44 @@ button[type="submit"] {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
+}
+/* offer-banner */
+.offer-banner {
+  margin-top: 80px;
+  width: 100%;
+  height: 892px;
+  background-image: url(/asset/trendingOffer/BrandBanner.png);
+  background-position: center;
+  background-size: cover;
+}
+.offer-banner-center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-banner-info {
+  text-align: center;
+}
+.offer-banner-info h2 {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  letter-spacing: 15px;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 70px;
+}
+.offer-banner-info h3 {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: white;
+}
+.offer-banner-info button {
+  color: white;
+  border-color: white;
 }
