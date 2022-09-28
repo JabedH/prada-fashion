@@ -7,7 +7,31 @@ iframe[seamless] {
   padding: 0;
   font-family: "Libre Baskerville", serif;
 }
-
+.h2-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  margin-bottom: 27px;
+}
+.h3-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+.explore-button {
+  background-color: transparent;
+  cursor: grab;
+  padding: 5px;
+  margin-top: 39px;
+  width: 172px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  border: 2px solid #222222;
+  border-radius: 10px;
+}
 /* nav bar */
 .icon-flex {
   display: flex;
@@ -105,21 +129,66 @@ button[type="submit"] {
 }
 
 /* banner */
-.banner-img {
+/* .banner {
+  position: relative;
+} */
+.banner-item {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-item-1 {
+  text-align: center;
+}
+.banner-item-1 h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 60px;
+  margin-bottom: 66px;
+}
+.banner-item-1 h3 {
+  color: #565656;
+  margin: 10px 0;
+}
+/* .main-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
+.banner-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
+  height: 797px;
+  background-image: url(/asset/banner/banner-1.png);
+  background-position: center;
+  background-size: cover;
+}
+.banner-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 797px;
+  background-image: url(/asset/banner/b1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 797px;
+  background-image: url(/asset/banner/b2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /* trending */
 .trending-section {
   margin: 80px 50px;
 }
-.h2-text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 45px;
-  margin-bottom: 27px;
-}
+
 .trending {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -165,8 +234,7 @@ button[type="submit"] {
   align-items: center;
   gap: 10px;
 }
-.trending-brand img {
-}
+
 .trending-cost {
   font-size: 22px;
   display: flex;
@@ -237,18 +305,7 @@ button[type="submit"] {
   font-size: 48px;
   line-height: 60px;
 }
-.explore-button {
-  background-color: transparent;
-  cursor: grab;
-  padding: 5px;
-  margin-top: 39px;
-  width: 172px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  border: 2px solid #222222;
-  border-radius: 10px;
-}
+
 /* offer-banner */
 
 .offer-banner {
