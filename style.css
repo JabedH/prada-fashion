@@ -113,7 +113,7 @@ button[type="submit"] {
 
 /* trending */
 .trending-section {
-  margin: 80px 22px 0 22px;
+  margin: 80px 50px;
 }
 .h2-text {
   font-style: normal;
@@ -178,7 +178,7 @@ button[type="submit"] {
 
 /* deals */
 .deals-section {
-  margin: 80px 11px 0 11px;
+  margin: 80px 50px;
 }
 .deals {
   display: grid;
@@ -213,7 +213,7 @@ button[type="submit"] {
 
 /* trending-offer */
 .trending-offer-section {
-  margin: 80px 11px 0 11px;
+  margin: 80px 50px;
 }
 .trending-offer-box {
   display: flex;
@@ -294,56 +294,28 @@ button[type="submit"] {
 }
 
 /* Categories */
-/* .Categories {
+.categories {
+  margin: 80px 50px;
+}
+#outer-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
 }
-.categories-1 {
-  grid-column: span 2;
-  width: 100%;
-  background-image: url(/asset/categories/c1.png);
+#inner-grid1 {
+  grid-row: span 2;
+}
+#outer-grid div {
+  color: white;
+  font-size: 4vw;
+  border-radius: 10px;
   background-size: cover;
 }
-.categories-2 {
-  grid-column: span 2;
-  
-}
-.categories-3 {
-  height: 320px;
-
-  background-image: url(/asset/categories/c2.png);
-  background-size: cover;
-}
-.categories-4 {
-  height: 320px;
-  background-image: url(/asset/categories/c6.png);
-  background-size: cover;
-}
-.categories-5 {
-  grid-column: span 2;
-}
-.categories-6 {
-  height: 330.5px;
-  background-image: url(/asset/categories/c3.png);
-  background-size: cover;
-}
-.categories-7 {
+#inner-grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
 }
-.categories-8 {
-  height: 330.5px;
-  background-image: url(/asset/categories/c4.png);
-  background-size: cover;
-}
-.categories-9 {
-  width: 282.5px;
-  height: 330.5px;
-  background-image: url(/asset/categories/c5.png);
-  background-size: cover;
-} */
 .categories-1 {
   height: 686px;
   width: 100%;
@@ -356,42 +328,16 @@ button[type="submit"] {
 .categories-3 {
   height: 330.5px;
   background-image: url(/asset/categories/c6.png);
-  
 }
 .categories-4 {
   height: 330.5px;
   background-image: url(/asset/categories/c6.png);
-  
 }
 .categories-5 {
   height: 330.5px;
   background-image: url(/asset/categories/c4.png);
- 
 }
 .categories-6 {
   height: 330.5px;
   background-image: url(/asset/categories/c5.png);
-}
-#outer-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
-  padding: 20px;
-}
-#inner-grid1 {
-  grid-row: span 2;
-}
-#outer-grid div {
-
-  color: white;
-  font-size: 4vw;
-  border-radius: 10px;
-  background-size: cover;
-}
-#inner-grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
-}
-#inner-grid2 > div {
 }
