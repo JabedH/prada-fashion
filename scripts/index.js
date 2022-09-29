@@ -13,7 +13,7 @@ setInterval(() => {
   classIndex++;
 }, 4000);
 
-// ---//
+// --Trending Offers slider-//
 const myslide = document.querySelectorAll(".trending-offer-details"),
   dot = document.querySelectorAll(".dot");
 let counter = 1;
@@ -42,7 +42,6 @@ function resetTimer() {
 function slidefun(n) {
   let i;
   for (i = 0; i < myslide.length; i++) {
-    // myslide[i].style.display = "flex";
     myslide[i].style.display = "none";
   }
   for (i = 0; i < dot.length; i++) {
@@ -56,4 +55,48 @@ function slidefun(n) {
   }
   myslide[counter - 1].style.display = "block";
   dot[counter - 1].className += " active";
+}
+
+// --Trending Offers slider-//
+const customerSlide = document.querySelectorAll(".customer-Slider"),
+  customerDot = document.querySelectorAll(".customerDot ");
+let customerCounter = 1;
+CounterSlideFun(customerCounter);
+
+let customerTimer = setInterval(autoSlide, 8000);
+function CustomerAutoSlide() {
+  customerCounter += 1;
+  CounterSlideFun(customerCounter);
+}
+function customerPlusSlides(n) {
+  customerCounter += n;
+  CounterSlideFun(customerCounter);
+  resetTimer();
+}
+function customerCurrentSlide(n) {
+  customerCounter = n;
+  CounterSlideFun(customerCounter);
+  resetTimer();
+}
+function resetTimer() {
+  clearInterval(customerTimer);
+  customerTimer = setInterval(CustomerAutoSlide, 8000);
+}
+
+function CounterSlideFun(n) {
+  let i;
+  for (i = 0; i < customerSlide.length; i++) {
+    customerSlide[i].style.display = "none";
+  }
+  for (i = 0; i < customerDot.length; i++) {
+    customerDot[i].className = customerDot[i].className.replace(" active", "");
+  }
+  if (n > customerSlide.length) {
+    customerCounter = 1;
+  }
+  if (n < 1) {
+    customerCounter = customerSlide.length;
+  }
+  customerSlide[customerCounter - 1].style.display = "block";
+  customerDot[customerCounter - 1].className += " active";
 }

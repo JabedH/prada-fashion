@@ -25,7 +25,7 @@
     <!-- nav bar -->
     <header class="mainHeader">
       <nav>
-        <div><img src="/asset/logo.svg" alt="" /></div>
+        <div id="header-logo"><img src="/asset/logo.svg" alt="" /></div>
         <div class="itemsFlex">
           <ul>
             <li><a href="#">Men</a></li>
@@ -63,28 +63,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="banner-1">
-          <div></div>
-          <div class="banner-item">
-            <div class="banner-item-1">
-              <h1>PARDA</h1>
-              <h3 class="h3-text">Big Fashion Festival</h3>
-              <h3 class="h3-text">50% - 80% off</h3>
-              <button class="explore-button">Explore</button>
-            </div>
-          </div>
-        </div>
-        <div class="banner-2">
-          <div></div>
-          <div class="banner-item">
-            <div class="banner-item-1">
-              <h1>PARDA</h1>
-              <h3 class="h3-text">Big Fashion Festival</h3>
-              <h3 class="h3-text">50% - 80% off</h3>
-              <button class="explore-button">Explore</button>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- Trending -->
@@ -194,12 +172,12 @@
       </div>
     </section>
     <!-- Trending Offers -->
-    <section>
+    <section class="trending-offer">
       <div class="trending-offer-section">
         <h2 class="h2-text">Trending Offers</h2>
         <div class="trending-offer-box">
           <div data-slides class="trending-offer-details">
-            <div class="new-slide">
+            <div data-active class="new-slide">
               <div class="trending-offer-group">
                 <img src="./asset/deals/Group.png" alt="" />
                 <h3>Min 60% off</h3>
@@ -212,10 +190,10 @@
             </div>
           </div>
           <div class="trending-offer-details">
-            <div class="new-slide">
+            <div data-active class="new-slide">
               <div class="trending-offer-group">
                 <img src="./asset/deals/Group.png" alt="" />
-                <h3>Min 60% off</h3>
+                <h3>Min 50% off</h3>
                 <button class="explore-button">Explore</button>
               </div>
               <div class="trending-offer-img">
@@ -224,14 +202,14 @@
             </div>
           </div>
           <div class="trending-offer-details">
-            <div class="new-slide">
-              <div class="trending-offer-group">
-                <img src="./asset/deals/Group.png" alt="" />
-                <h3>Min 60% off</h3>
-                <button class="explore-button">Explore</button>
-              </div>
+            <div data-active class="new-slide">
               <div class="trending-offer-img">
                 <img src="/asset/trendingOffer/o3.png" alt="" />
+              </div>
+              <div class="trending-offer-group">
+                <img src="./asset/deals/Group.png" alt="" />
+                <h3>Min 40% off</h3>
+                <button class="explore-button">Explore</button>
               </div>
             </div>
           </div>
@@ -240,7 +218,7 @@
         <div></div>
       </div>
       <!-- onclick js -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094; SDFG</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
       <div class="dotsbox" style="text-align: center">
@@ -334,73 +312,88 @@
       <div class="customer-section">
         <h2 class="h2-text">What Our Customer Says</h2>
         <div class="customer">
-          <div class="customer-1">
-            <div class="customer-img">
-              <img src="/asset/CustomerSays/Ellipse 60.png" alt="" />
-            </div>
-            <div class="customer-star">
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-4.png" alt="" />
-              <p>4.4</p>
-            </div>
-            <div class="customer-peragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vel
-                morbi cursus sed sodales molestie proin dictum gravida.
-                Porttitor maecenas tincidunt ipsum semper malesuada. In sapien
-                feugiat laoreet convallis eu sed. Sapien et montes, duis tempor
-                euismod augue cras eu eget. Risus suspendisse mauris ullamcorper
-              </p>
-            </div>
-          </div>
-          <div class="customer-1">
-            <div class="customer-img">
-              <img src="/asset/CustomerSays/Ellipse 60.png" alt="" />
-            </div>
-            <div class="customer-star">
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-4.png" alt="" />
-              <p>4.4</p>
-            </div>
-            <div class="customer-peragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vel
-                morbi cursus sed sodales molestie proin dictum gravida.
-                Porttitor maecenas tincidunt ipsum semper malesuada. In sapien
-                feugiat laoreet convallis eu sed. Sapien et montes, duis tempor
-                euismod augue cras eu eget. Risus suspendisse mauris ullamcorper
-              </p>
+          <div class="customer-Slider">
+            <div class="customer-1">
+              <div class="customer-img">
+                <img src="/asset/CustomerSays/Ellipse 60.png" alt="" />
+              </div>
+              <div class="customer-star">
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-4.png" alt="" />
+                <p>4.4</p>
+              </div>
+              <div class="customer-peragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                  vel morbi cursus sed sodales molestie proin dictum gravida.
+                  Porttitor maecenas tincidunt ipsum semper malesuada. In sapien
+                  feugiat laoreet convallis eu sed. Sapien et montes, duis
+                  tempor euismod augue cras eu eget. Risus suspendisse mauris
+                  ullamcorper
+                </p>
+              </div>
             </div>
           </div>
-          <div class="customer-1">
-            <div class="customer-img">
-              <img src="/asset/CustomerSays/Ellipse 60.png" alt="" />
+          <div class="customer-Slider">
+            <div class="customer-1">
+              <div class="customer-img">
+                <img src="/asset/CustomerSays/user1.png" alt="" />
+              </div>
+              <div class="customer-star">
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-4.png" alt="" />
+                <p>4.5</p>
+              </div>
+              <div class="customer-peragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui
+                  vel morbi cursus sed sodales molestie proin dictum gravida.
+                  Porttitor maecenas tincidunt ipsum semper malesuada. In sapien
+                  feugiat laoreet convallis eu sed. Sapien et montes, duis
+                  tempor euismod augue cras eu eget. Risus suspendisse mauris
+                  ullamcorper
+                </p>
+              </div>
             </div>
-            <div class="customer-star">
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-1.png" alt="" />
-              <img src="/asset/CustomerSays/star-4.png" alt="" />
-              <p>4.4</p>
-            </div>
-            <div class="customer-peragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui vel
-                morbi cursus sed sodales molestie proin dictum gravida.
-                Porttitor maecenas tincidunt ipsum semper malesuada. In sapien
-                feugiat laoreet convallis eu sed. Sapien et montes, duis tempor
-                euismod augue cras eu eget. Risus suspendisse mauris ullamcorper
-              </p>
+          </div>
+          <div class="customer-Slider">
+            <div class="customer-1">
+              <div class="customer-img">
+                <img src="/asset/CustomerSays/Ellipse 60.png" alt="" />
+              </div>
+              <div class="customer-star">
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-1.png" alt="" />
+                <img src="/asset/CustomerSays/star-4.png" alt="" />
+                <p>4.4</p>
+              </div>
+              <div class="customer-peragraph">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci, veniam consequatur. Ullam repellendus delectus totam
+                  voluptates quisquam dicta ad provident architecto?
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <!-- onclick js -->
+        <a class="prev" onclick="customerPlusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="customerPlusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox" style="text-align: center">
+          <span class="customerDot" onclick="customerCurrentSlide(1)"></span>
+          <span class="customerDot" onclick="customerCurrentSlide(2)"></span>
+        </div>
+        <!-- /onclick js -->
       </div>
     </section>
     <!-- footer -->
