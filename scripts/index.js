@@ -1,3 +1,4 @@
+//-- banner slider --//
 const allClass = ["banner-2", "banner-3", "banner-1"];
 const getClass = document.getElementById("main-slider");
 const setClass = document
@@ -100,3 +101,5 @@ function CounterSlideFun(n) {
   customerSlide[customerCounter - 1].style.display = "block";
   customerDot[customerCounter - 1].className += " active";
 }
+
+// *********************** --
