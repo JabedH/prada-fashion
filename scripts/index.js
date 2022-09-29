@@ -57,7 +57,7 @@ function slidefun(n) {
   dot[counter - 1].className += " active";
 }
 
-// --Trending Offers slider-//
+// --Customer slider-//
 const customerSlide = document.querySelectorAll(".customer-Slider"),
   customerDot = document.querySelectorAll(".customerDot ");
 let customerCounter = 1;

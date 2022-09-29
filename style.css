@@ -33,7 +33,7 @@ iframe[seamless] {
   border: 2px solid #222222;
   border-radius: 10px;
 }
-/* nav bar */
+/* nav bar start*/
 .icon-flex {
   display: flex;
   align-items: center;
@@ -168,10 +168,10 @@ button[type="submit"] {
     font-size: 10px;
   }
 }
-/* banner */
-/* .banner {
-  position: relative;
-} */
+/* nav bar end*/
+/* ------------------- */
+/* banner section start*/
+
 .banner-item {
   height: 100%;
   display: flex;
@@ -192,10 +192,6 @@ button[type="submit"] {
   color: #565656;
   margin: 10px 0;
 }
-/* .main-banner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-} */
 .banner-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -246,8 +242,9 @@ button[type="submit"] {
     margin-bottom: 66px;
   }
 }
-
-/* trending */
+/* banner section end*/
+/* ------------------- */
+/* trending section start*/
 .trending-section {
   margin: 80px 50px;
 }
@@ -304,8 +301,9 @@ button[type="submit"] {
   align-items: center;
   gap: 10px;
 }
-
-/* deals */
+/* trending section end*/
+/* ------------------- */
+/* deals section start */
 .deals-section {
   margin: 80px 50px;
 }
@@ -339,8 +337,9 @@ button[type="submit"] {
   line-height: 30px;
   margin-top: 13px;
 }
-
-/* trending-offer */
+/* deals section end */
+/* ------------------ */
+/* trending-offer start */
 
 .trending-offer-section {
   position: relative;
@@ -351,15 +350,6 @@ button[type="submit"] {
   align-items: center;
   gap: 20px;
 }
-/* .new-slide{
-  transition: 200ms opacity ease-in-out;
-  transition-delay: 200ms;
-  opacity: 0;
-}
-.new-slide[data-active] {
-  transition-delay: 0ms;
-  opacity: 1;
-} */
 .new-slide {
   display: flex;
   align-items: center;
@@ -401,7 +391,9 @@ button[type="submit"] {
 .next {
   right: 0;
 }
-/* offer-banner */
+/* trending-offer end */
+/* ----------------- */
+/* offer-banner start*/
 
 .offer-banner {
   margin-top: 80px;
@@ -442,8 +434,9 @@ button[type="submit"] {
   color: white;
   border-color: white;
 }
-
-/* Categories */
+/* offer-banner end*/
+/* --------------- */
+/* Categories start*/
 .categories {
   margin: 80px 50px;
 }
@@ -503,14 +496,15 @@ button[type="submit"] {
   height: 330.5px;
   background-image: url(/asset/categories/c5.png);
 }
-
-/* customer section */
+/* Categories end*/
+/* --------------- */
+/* customer section  start*/
 .customer-section {
   margin: 80px 50px;
   position: relative;
 }
-.customer-Slider {
-  display: flex;
+.customer-Slider-flex {
+  display: grid;
   align-items: center;
   justify-content: center;
   justify-items: center;
@@ -546,8 +540,9 @@ button[type="submit"] {
   text-align: center;
   padding: 21px 32px;
 }
-
-/* footer */
+/* customer section end*/
+/* ------------------- */
+/* footer start*/
 .footer {
   background-color: #00071b;
   color: white;
@@ -634,3 +629,6 @@ button[type="submit"] {
   display: flex;
   gap: 15px;
 }
+/* footer end */
+
+/* ******************************** */
