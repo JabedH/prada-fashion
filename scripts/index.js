@@ -23,91 +23,91 @@ setInterval(() => {
 }, 4000);
 
 // --Trending Offers slider-//
-const myslide = document.querySelectorAll(".trending-offer-details"),
-  dot = document.querySelectorAll(".dot");
-let counter = 1;
-slidefun(counter);
 
-let timer = setInterval(autoSlide, 8000);
-function autoSlide() {
-  counter += 1;
-  slidefun(counter);
-}
-function plusSlides(n) {
-  counter += n;
-  slidefun(counter);
-  resetTimer();
-}
-function currentSlide(n) {
-  counter = n;
-  slidefun(counter);
-  resetTimer();
-}
-function resetTimer() {
-  clearInterval(timer);
-  timer = setInterval(autoSlide, 8000);
-}
+// Select all slides
+const slides = document.querySelectorAll(".offerSlide");
 
-function slidefun(n) {
-  let i;
-  for (i = 0; i < myslide.length; i++) {
-    myslide[i].style.display = "none";
+// loop through slides and set each slides translateX property to index * 100%
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+});
+// select prev slide button
+const prevSlide = document.querySelector(".btn-prev");
+// add event listener and navigation functionality
+prevSlide.addEventListener("click", function () {
+  // check if current slide is the first and reset current slide to last
+  if (curSlide === 0) {
+    curSlide = maxSlide;
+  } else {
+    curSlide--;
   }
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active", "");
+  //   move slide by 100%
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
+// select next slide button
+const nextSlide = document.querySelector(".btn-next");
+// current slide counter
+let curSlide = 0;
+// maximum number of slides
+let maxSlide = slides.length - 1;
+// add event listener and navigation functionality
+nextSlide.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
   }
-  if (n > myslide.length) {
-    counter = 1;
-  }
-  if (n < 1) {
-    counter = myslide.length;
-  }
-  myslide[counter - 1].style.display = "block";
-  dot[counter - 1].className += " active";
-}
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
 
 // --Customer slider-//
-const customerSlide = document.querySelectorAll(".customer-Slider"),
-  customerDot = document.querySelectorAll(".customerDot ");
-let customerCounter = 1;
-CounterSlideFun(customerCounter);
+// Select all customerSlides
+// Select all customerSlides
+const customerSlides = document.querySelectorAll(".customerSlide");
 
-let customerTimer = setInterval(autoSlide, 8000);
-function CustomerAutoSlide() {
-  customerCounter += 1;
-  CounterSlideFun(customerCounter);
-}
-function customerPlusSlides(n) {
-  customerCounter += n;
-  CounterSlideFun(customerCounter);
-  resetTimer();
-}
-function customerCurrentSlide(n) {
-  customerCounter = n;
-  CounterSlideFun(customerCounter);
-  resetTimer();
-}
-function resetTimer() {
-  clearInterval(customerTimer);
-  customerTimer = setInterval(CustomerAutoSlide, 8000);
-}
+// loop through customerSlides and set each customerSlides translateX property to index * 100%
+customerSlides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+});
+// select prev slide button
+const customerPrevSlide = document.querySelector(".customer-prev");
+// add event listener and navigation functionality
+customerPrevSlide.addEventListener("click", function () {
+  // check if current slide is the first and reset current slide to last
+  if (customerCurSlide === 0) {
+    customerCurSlide = customerMaxSlide;
+  } else {
+    customerCurSlide--;
+  }
+  //   move slide by 100%
+  customerSlides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - customerCurSlide)}%)`;
+  });
+});
+// select next slide button
+const customerNextSlide = document.querySelector(".customer-next");
+// current slide counter
+let customerCurSlide = 0;
+// maximum number of customerSlides
+let customerMaxSlide = customerSlides.length - 1;
 
-function CounterSlideFun(n) {
-  let i;
-  for (i = 0; i < customerSlide.length; i++) {
-    customerSlide[i].style.display = "none";
+// add event listener and navigation functionality
+customerNextSlide.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+  if (customerCurSlide === customerMaxSlide) {
+    customerCurSlide = 0;
+  } else {
+    customerCurSlide++;
   }
-  for (i = 0; i < customerDot.length; i++) {
-    customerDot[i].className = customerDot[i].className.replace(" active", "");
-  }
-  if (n > customerSlide.length) {
-    customerCounter = 1;
-  }
-  if (n < 1) {
-    customerCounter = customerSlide.length;
-  }
-  customerSlide[customerCounter - 1].style.display = "block";
-  customerDot[customerCounter - 1].className += " active";
-}
+  customerSlides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - customerCurSlide)}%)`;
+  });
+});
 
 // *********************** --

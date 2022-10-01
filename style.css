@@ -464,15 +464,53 @@ media query
 /* ------------------ */
 /* trending-offer start */
 
-.trending-offer-section {
+.slider {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
   position: relative;
-  margin: 80px 50px;
+  overflow: hidden; /* <===  */
+  border-radius: 15px;
 }
-.trending-offer-box {
+
+.slide {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
 }
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
 .new-slide {
   display: flex;
   align-items: center;
@@ -492,28 +530,7 @@ media query
   font-size: 48px;
   line-height: 60px;
 }
-.trending-offer {
-  position: relative;
-}
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  font-size: 50px;
-  padding: 15px;
-  cursor: pointer;
-  color: #00071b;
-  transition: 0.1s;
-  user-select: none;
-}
-.prev:hover,
-.next:hover {
-  color: #00a7ff; /* blue */
-}
-.next {
-  right: 0;
-}
+
 @media only screen and (max-width: 560px) {
   .new-slide {
     display: grid;
