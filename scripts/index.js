@@ -1,3 +1,11 @@
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  nav_header.classList.toggle("active");
+};
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
 //-- banner slider --//
 const allClass = ["banner-2", "banner-3", "banner-1"];
 const getClass = document.getElementById("main-slider");
