@@ -278,9 +278,9 @@ media query
 }
 .banner-item {
   height: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .banner-item-1 {
   text-align: center;
@@ -289,12 +289,10 @@ media query
   font-style: normal;
   font-weight: 700;
   font-size: 78px;
-  line-height: 60px;
   margin-bottom: 66px;
 }
 .banner-item-1 h3 {
   color: #565656;
-  margin: 10px 0;
 }
 .main-banner img {
   width: 100%;
@@ -305,51 +303,34 @@ media query
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  /* height: 797px; */
-  /* background-image: url(/asset/banner/banner-1.png); */
-  /* background-position: center; */
 }
-.banner-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  height: 797px;
-  background-image: url(/asset/banner/b1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.banner-3 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  height: 797px;
-  background-image: url(/asset/banner/b2.jpg);
-  background-position: center;
-  background-size: cover;
-}
-/* @media only screen and (max-width: 560px) {
-  .banner-1,
-  .banner-2,
-  .banner-3 {
-    width: 77%;
-    height: 100px;
-  }
+
+@media only screen and (max-width: 560px) {
   .h2-text {
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 10px;
+    line-height: 1.6;
   }
   .h3-text {
     font-style: normal;
-    font-size: 20px;
+    font-size: 10px;
+    line-height: 1.6;
   }
   .banner-item-1 h1 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 66px;
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1;
   }
-} */
+  .explore-button {
+    width: 80px;
+    margin-top: 2px;
+    font-style: normal;
+    font-size: 10px;
+    border: 1px solid #222222;
+    border-radius: 5px;
+  }
+}
 /* banner section end*/
 /* ------------------- */
 /* trending section start*/
@@ -412,8 +393,12 @@ media query
 @media only screen and (max-width: 560px) {
   .trending {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+  .trending-section h2 {
+    font-size: 30px;
+    text-align: center;
   }
 }
 /* trending section end*/
@@ -455,7 +440,7 @@ media query
 @media only screen and (max-width: 560px) {
   .deals {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 0 11px 0 11px;
     gap: 20px;
     text-align: center;
@@ -555,6 +540,13 @@ media query
   }
   .trending-offer-group {
     width: 400px;
+  }
+  .trending-offer-group h3 {
+    font-size: 25px;
+  }
+  .trending-offer h3 {
+    font-size: 22px;
+    text-align: center;
   }
   .trending-offer-img img {
     width: 100%;
@@ -672,6 +664,14 @@ media query
     grid-template-columns: 1fr;
     grid-gap: 25px;
   }
+  #inner-grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .categories h2 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 /* Categories end*/
 /* --------------- */
@@ -738,9 +738,12 @@ media query
     gap: 20px;
   }
   .customer-1 {
-    width: 400px;
-    height: auto;
+    width: auto;
+    height: 500px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .customer-peragraph {
+    font-size: 10px;
   }
 }
 /* customer section end*/
@@ -838,6 +841,18 @@ media query
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin: 0 20px 20px 20px;
+  }
+  .footer-info h3 {
+    font-size: 20px;
+  }
+  .footer-info a {
+    font-size: 10px;
+  }
+  .footer-logo img {
+    width: 100px;
+  }
+  .footer-logo h2 {
+    font-size: 30px;
   }
 }
 /* footer end */
