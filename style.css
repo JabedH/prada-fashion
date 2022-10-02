@@ -517,7 +517,15 @@ media query
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px 0px 0px 10px;
 }
-
+.trending-offer {
+  margin: 10rem 5rem;
+}
+.trending-offer h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 60px;
+}
 .trending-offer-group {
   width: 550px;
   display: grid;
@@ -661,9 +669,23 @@ media query
 /* Categories end*/
 /* --------------- */
 /* customer section  start*/
+
 .customer-section {
-  margin: 80px 50px;
+  margin: 10rem 5rem;
+}
+.customer-section h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 60px;
+}
+.customerSlider {
+  width: 100%;
+  max-width: 100%;
+  height: 50rem;
   position: relative;
+  overflow: hidden; /* <===  */
+  border-radius: 15px;
 }
 .customer-Slider-flex {
   display: grid;
@@ -684,7 +706,7 @@ media query
 .customer-img {
   display: flex;
   justify-content: center;
-  padding: 58px 0 24px 0;
+  padding: 4rem 0 2.4rem 0;
 }
 .customer-star {
   display: flex;
@@ -700,7 +722,7 @@ media query
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding: 21px 32px;
+  padding: 2rem;
 }
 @media only screen and (max-width: 560px) {
   .customer {
